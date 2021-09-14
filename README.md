@@ -12,3 +12,4 @@ Good news that have information about what do
 
 4 - (Not necessary for this project) do a repo for born2beroot
 
+5 - ver sobre submodulos no git, aparentemente da pra resolver facin
