@@ -21,7 +21,6 @@ mirror 3 ou 5
 
 
 notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb
-<<<<<<< HEAD
 
 
 
@@ -79,6 +78,3 @@ proberto
 
 
 
-=======
-  
->>>>>>> 87e330a322575afc2965bd1208437f405628209a
