@@ -2,10 +2,6 @@ Many things to do! Listing all!
 
 Good news that have information about what do
 
-1 - this helps a lot https://elearning.intra.42.fr/notions/minilibx/subnotions/mlx-introduction/videos/introduction-to-minilibx
-
-1,5 - helps too https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
-
 2 - need put gnl inside of libft
 
 3 - (Not necessary for this project) do a Readme for ft_printf
@@ -14,19 +10,34 @@ Good news that have information about what do
 
 5 - ver sobre submodulos no git, aparentemente da pra resolver facin
 
+------------------------Livro sobre C
 
 https://libgen.is/search.php?req=learn+c+the+hard+way&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def
 
 mirror 3 ou 5
 
+------------------------Documentação auxiliar
+- notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb
+- this helps a lot https://elearning.intra.42.fr/notions/minilibx/subnotions/mlx-introduction/videos/introduction-to-minilibx
+- helps too https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
+- link com explicações das funções da minilibx e exemplos https://github.com/S-LucasSerrano/miniLibX_sample
 
-notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb
+------------------------Links Sprites
 
+Links compartilhados pelo vlima-nu
+-https://opengameart.org/
+-https://kenney.nl/assets
+-https://www.gameart2d.com/freebies.html
+-https://craftpix.net/
+-https://assetstore.unity.com/
+-https://itch.io/game-assets/free
 
+Muita coisa, mas trabalhoso de encontrar
+-https://www.spriters-resource.com/pc_computer/diablo2diablo2lordofdestruction/
 
 
 ------------------------Basico
-path sempre referente ao executavel (solong), segfault duas causas, 
+<p>path sempre referente ao executavel (solong), segfault duas causas, 
 
 sempre que usar os ponteiros lembrar dos leaks....
 
@@ -41,9 +52,11 @@ após criar a tela preta, criar um ponteiro void e dentro dele colocar a funçao
 usar o mlx_put_image_to_window  para passar o ponteiro da imagem e onde voce quer colocar a imagem
 
 para mover o personagem, criar uma funçao que altera o lugar onde esta...
+</p>
+
 
 ----------------------MAPA
-para ler o mapa, usar o gnl que vai ler linha a linha e guarda em **
+<p>para ler o mapa, usar o gnl que vai ler linha a linha e guarda em **
 após guardar nesse array de char, tem que criar uma funçao para colocar as imagens
 
 para imprimir, usar um loop para ler a linha toda e imprimir
@@ -52,9 +65,11 @@ para saber qual pixel esta, usar um index.
 importante, ele sempre imprime em pixel, lembrar de fazer as contas de quantos px a img ocupa
 	e quanto vai imprimir
 
+</p>
+
 
 -------------------movimentação
-mlx_key_hook, cada vez que vc pressiona uma tecla ela chama uma função
+<p>mlx_key_hook, cada vez que vc pressiona uma tecla ela chama uma função
 	primeiro ponteiro da janela 
 	segundo parametro função que recebe um int de parametro e faz algo, o int é a tecla que foi apertada
 	terceiro parametro funçao alternativa, se nao usar passar um (void *)0
@@ -62,15 +77,15 @@ mlx_key_hook, cada vez que vc pressiona uma tecla ela chama uma função
 se jogar uma imagem em cima da outra (sempre jogar um put image) acaba consumindo muita memoria
 	uma das possiveis soluçoes é destruir e reconstruir a cada tecla apertada
 
+</p>
 
 
 
+---------------pessoas que ajudaram com a explicação
 
----------------ajuda
-
-guferrei
-elima-me
-proberto
+-guferrei
+-elima-me
+-proberto
 
 
 
