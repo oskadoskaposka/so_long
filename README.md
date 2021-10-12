@@ -18,26 +18,26 @@ mirror 3 ou 5
 
 ------------------------Documentação auxiliar
 <p>
-- notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb
-- this helps a lot https://elearning.intra.42.fr/notions/minilibx/subnotions/mlx-introduction/videos/introduction-to-minilibx
-- helps too https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
-- link com explicações das funções da minilibx e exemplos https://github.com/S-LucasSerrano/miniLibX_sample
+- notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb <br>
+- this helps a lot https://elearning.intra.42.fr/notions/minilibx/subnotions/mlx-introduction/videos/introduction-to-minilibx <br>
+- helps too https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html <br>
+- link com explicações das funções da minilibx e exemplos https://github.com/S-LucasSerrano/miniLibX_sample <br>
 </p>
 
 ------------------------Links Sprites
-<p>
-Links compartilhados pelo vlima-nu
--https://opengameart.org/
--https://kenney.nl/assets
--https://www.gameart2d.com/freebies.html
--https://craftpix.net/
--https://assetstore.unity.com/
--https://itch.io/game-assets/free
 
-Muita coisa, mas trabalhoso de encontrar
+Links compartilhados pelo vlima-nu<br>
+-https://opengameart.org/<br>
+-https://kenney.nl/assets<br>
+-https://www.gameart2d.com/freebies.html<br>
+-https://craftpix.net/<br>
+-https://assetstore.unity.com/<br>
+-https://itch.io/game-assets/free<br>
+<br>
+Muita coisa, mas trabalhoso de encontrar<br>
 -https://www.spriters-resource.com/pc_computer/diablo2diablo2lordofdestruction/
+<br>
 
-</p>
 ------------------------Basico
 <p>path sempre referente ao executavel (solong), segfault duas causas, 
 
