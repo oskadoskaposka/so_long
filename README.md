@@ -85,9 +85,9 @@ se jogar uma imagem em cima da outra (sempre jogar um put image) acaba consumind
 
 ---------------pessoas que ajudaram com a explicação
 <p>
--guferrei
--elima-me
--proberto
+-guferrei <br>
+-elima-me <br>
+-proberto <br>
 
 </p>
 
