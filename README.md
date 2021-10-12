@@ -1,4 +1,4 @@
-Many things to do! Listing all!
+makMany things to do! Listing all!
 
 Good news that have information about what do
 
@@ -17,13 +17,15 @@ https://libgen.is/search.php?req=learn+c+the+hard+way&lg_topic=libgen&open=0&vie
 mirror 3 ou 5
 
 ------------------------Documentação auxiliar
+<p>
 - notion compartilhado pelo welton com mais info do so_long https://bumpy-truffle-c97.notion.site/SoLong-13550c956d2f4d288b6a73a97ee7bccb
 - this helps a lot https://elearning.intra.42.fr/notions/minilibx/subnotions/mlx-introduction/videos/introduction-to-minilibx
 - helps too https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
 - link com explicações das funções da minilibx e exemplos https://github.com/S-LucasSerrano/miniLibX_sample
+</p>
 
 ------------------------Links Sprites
-
+<p>
 Links compartilhados pelo vlima-nu
 -https://opengameart.org/
 -https://kenney.nl/assets
@@ -35,7 +37,7 @@ Links compartilhados pelo vlima-nu
 Muita coisa, mas trabalhoso de encontrar
 -https://www.spriters-resource.com/pc_computer/diablo2diablo2lordofdestruction/
 
-
+</p>
 ------------------------Basico
 <p>path sempre referente ao executavel (solong), segfault duas causas, 
 
@@ -82,13 +84,12 @@ se jogar uma imagem em cima da outra (sempre jogar um put image) acaba consumind
 
 
 ---------------pessoas que ajudaram com a explicação
-
+<p>
 -guferrei
 -elima-me
 -proberto
 
-
-
+</p>
 
 
 
