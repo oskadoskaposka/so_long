@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:37 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/16 21:09:40 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/16 23:06:15 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int main (void)
 	mlx_put_image_to_window(mlx, mlx_win,print_wall, 210, 2);
 
 	mlx_loop(mlx);
+
+	ft_isdigit(1);
 
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/16 21:49:11 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/16 23:06:02 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,18 @@
 # define SO_LONG_H
 
 #include "../mlx_linux/mlx.h"
+#include "../Libft/libft.h"
+#include <fcntl.h>
 
 /* ************************************************************************** */
 /*                              STRUCTS                                       */
 /* ************************************************************************** */
+
+typedef struct s_map_config
+{
+	char	**map;
+	int		line;
+}	t_map;
 
 
 #endif

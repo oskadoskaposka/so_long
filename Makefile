@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/06 14:42:30 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/16 23:12:57 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,8 @@ NAME=so_long
 PATH_MLX=mlx_linux/
 ## headers path
 PATH_HEADER=headers/
+## libft path
+PATH_LIBFT=Libft/
 
 # Files 
 ## .c files
@@ -28,6 +30,8 @@ H_SOURCE=$(PATH_HEADER)so_long.h
 OUT=$(C_SOURCE:.c=.o)
 ## mlx
 MLX=$(PATH_MLX)libmlx.a
+## libft
+LIBFT=$(PATH_LIBFT)libft.a
 
 # Compiler
 CC=clang
@@ -46,8 +50,8 @@ MLX_FLAGS=-L. -lXext -L. -lX11
 all: $(NAME)
 
 # This rule compiles 
-$(NAME): $(MLX) $(OUT)
-	@$(CC) $(CC_FLAGS) $(C_SOURCE) $(MLX) $(MLX_FLAGS) -o $(NAME)
+$(NAME): $(MLX) $(OUT) $(LIBFT)
+	@$(CC) $(CC_FLAGS) $(C_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 
 $(OUT): $(C_SOURCE) $(H_SOURCE)
 	@$(CC) -c $(C_SOURCE) -I $(PATH_HEADER)
@@ -55,11 +59,16 @@ $(OUT): $(C_SOURCE) $(H_SOURCE)
 $(MLX):
 	@cd mlx_linux; make
 
+$(LIBFT):
+	@cd Libft; make
+
 clean:
+	@cd Libft; make clean
 	@rm -f $(OUT)
 	@echo "Removing $(OUT)"
 
 fclean:
+	@cd Libft; make fclean
 	@rm -f $(OUT)
 	@echo "Removing $(OUT)"
 	@rm -f $(NAME)
