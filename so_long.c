@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/21 23:58:03 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/22 00:16:27 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,14 @@
 
 int	main(void)
 {
-	int		i;
-	char	*s;
-	t_map	*map;
+	t_map	map;
+	
+	map.path_map = "src/map.ber";
+
+	count_lines(&map);
+
+	printf("\n o valor de i é %i\n ------------------------------------- \n", map.lines);
 
 
-	i = 0;
-	s = "teste";
-	map->path_map = "src/map.ber";
-
-	count_lines(map.path_map);
-
-	// while (s)
-	// {
-	// 	s = get_next_line(fd);
-	// 	if (s)
-	// 		printf("%s", s);
-	// 	i++;
-	// }
-	printf ("\n\n%i \n", i);
 	return (0);
 }
