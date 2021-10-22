@@ -6,11 +6,11 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/22 00:16:27 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/22 00:39:30 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "headers/so_long.h"
+#include "../headers/so_long.h"
 
 int	main(void)
 {
