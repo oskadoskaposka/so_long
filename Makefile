@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/22 00:39:42 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/22 01:19:59 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,11 +51,14 @@ MLX_FLAGS=-L. -lXext -L. -lX11
 all: $(NAME)
 
 # This rule compiles 
-$(NAME): $(MLX) $(OUT) $(LIBFT)
+$(NAME): $(LIBFT) $(MLX)
 	@$(CC) $(CC_FLAGS) $(C_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 
-$(OUT): $(C_SOURCE) $(H_SOURCE)
-	@$(CC) -c $(C_SOURCE) -I $(PATH_HEADER)
+#$(OUT): $(C_SOURCE) $(H_SOURCE)
+#	@$(CC) -c $(C_SOURCE) -I $(PATH_HEADER) -o $@
+
+%.o: %.c
+		$(CC) $(CC_FLAGS) -c $< -o $@
 
 $(MLX):
 	@cd mlx_linux; make
