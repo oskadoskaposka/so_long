@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/21 23:40:19 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/21 23:57:05 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	count_lines(char *path_map)
 	i = 0;
 	fd = open(path_map, O_RDONLY);
 	s = get_next_line(fd);
-
 	while (s)
 	{
 		i++;
