@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/22 00:16:11 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/22 00:19:28 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	count_lines(t_map *map)
 	{
 		i++;
 		s = get_next_line(fd);
+		map->map[i] = s;
 	}
 	map->lines = i;
 	return (i);
