@@ -1,47 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   map_read.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/21 23:39:59 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/10/21 23:40:19 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "headers/so_long.h"
 
-int	main(void)
+int	count_lines(char *path_map)
 {
 	int		i;
-	char	*s;
 	int		fd;
-	// t_map	map;
-	char **map;
-
-	char *path_map;
-
+	char	*s;
 
 	i = 0;
-	s = "teste";
-	fd = open("src/map.ber", O_RDONLY);
- 	map = malloc((5) * sizeof(char *));
-
-	path_map = "src/map.ber";
-
-	count_lines(path_map);
+	fd = open(path_map, O_RDONLY);
+	s = get_next_line(fd);
 
 	while (s)
 	{
-		s = get_next_line(fd);
-		if (s)
-		{
-			printf("%s", s);
-			map[i] = ft_strdup(s); 
-		}
 		i++;
+		s = get_next_line(fd);
 	}
-	printf ("\n\n%i \n", i);
-	return (0);
+	printf("\n o valor de i é %i\n ------------------------------------- \n", i);
+	return (i);
 }

@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/16 23:12:57 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/21 23:36:11 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ PATH_LIBFT=Libft/
 
 # Files 
 ## .c files
-C_SOURCE=so_long.c
+C_SOURCE=so_long.c \
+         map_read.c
 ## .h files
 H_SOURCE=$(PATH_HEADER)so_long.h
 ## Output files
