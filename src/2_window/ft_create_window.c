@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 01:28:40 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 19:52:16 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 19:58:11 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ void	ft_create_window(t_config *config)
 
 	ft_config_images(config);
 	
-	mlx_loop(config->mlx->ptr);
+	//mlx_loop(config->mlx->ptr);
 }
