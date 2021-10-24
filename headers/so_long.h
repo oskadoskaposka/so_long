@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/22 02:16:15 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/23 23:19:16 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 /* ************************************************************************** */
 /*                              INCLUDES                                      */
 /* ************************************************************************** */
-#include "../mlx_linux/mlx.h"
-#include "../Libft/libft.h"
-#include <fcntl.h>
-#include <stdio.h>
+# include "../mlx_linux/mlx.h"
+# include "../Libft/libft.h"
+# include <fcntl.h>
+# include <stdio.h>
 
 /* ************************************************************************** */
 /*                              STRUCTS                                       */
@@ -27,7 +27,7 @@
 typedef struct s_map_config
 {
 	char	**map;
-	char 	*path_map;
+	char	*path_map;
 	int		lines;
 	int		len;
 }	t_map;
@@ -35,6 +35,8 @@ typedef struct s_map_config
 /* ************************************************************************** */
 /*                              FUNCTIONS                                     */
 /* ************************************************************************** */
-int	count_lines(t_map *map);
+int		ft_count_lines(t_map *map);
+void	ft_save_map(t_map *map);
+void	ft_check_map_values (t_map *map);
 
 #endif
