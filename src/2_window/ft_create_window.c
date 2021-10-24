@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 01:28:40 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 02:00:59 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 03:06:48 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 
 void	ft_create_window(void)
 {
-	t_mlx	mlx;
 	t_map	map;
-	int		x;
-	int 	y;
+	t_mlx	mlx;
 
-	x = map.len * 50;
-	y = map.lines * 50;
 	mlx.ptr = mlx_init();
-	mlx.ptr_win = mlx_new_window(mlx.ptr, x, y, "SO_LONG");
+	//definir uma variavel com o tamanho padrao das imagens no lugar desse 50
+	mlx.ptr_win = mlx_new_window(mlx.ptr, (map.len * 50), (map.lines * 50),
+	 "so_long");
 
 	mlx_loop(mlx.ptr);
 }
