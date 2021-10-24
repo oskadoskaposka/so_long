@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/23 23:49:58 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/24 01:03:04 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,8 +44,6 @@ CC_FLAGS=-Wall         \
 # Flags mlx
 MLX_FLAGS=-L. -lXext -L. -lX11
 
-
-
 ############################  RULES
 
 # Compilation and linking
@@ -54,31 +52,28 @@ all: $(NAME)
 # This rule compiles 
 $(NAME): $(LIBFT) $(MLX)
 	@$(CC) $(CC_FLAGS) $(C_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
-
-#$(OUT): $(C_SOURCE) $(H_SOURCE)
-#	@$(CC) -c $(C_SOURCE) -I $(PATH_HEADER) -o $@
+	@echo "$(GR)Creating $(NAME) project!$(RC)"
 
 %.o: %.c
 	@$(CC) $(CC_FLAGS) -c $< -o $@
 
 # the flag -s is for not run the message of changing directories
 $(MLX):
-	@cd mlx_linux; make
+	@make -s -C ./mlx_linux
 
 $(LIBFT):
-	@cd Libft; make
+	@make -s -C ./Libft
 
 clean:
-	@cd Libft; make clean
+	@make clean -s -C ./Libft
 	@rm -f $(OUT)
-	@echo "Removing $(OUT)"
+	@echo "$(YE)Removing Libft and $(NAME) .o files!$(RC)"
 
 fclean:
-	@cd Libft; make fclean
+	@make fclean -s -C ./Libft
 	@rm -f $(OUT)
-	@echo "Removing $(OUT)"
 	@rm -f $(NAME)
-	@echo "Removing $(NAME)"
+	@echo "$(RE)Removing Libft and $(NAME) .o and .a files!$(RC)"
 
 r: fclean all
 	@./so_long
@@ -95,7 +90,8 @@ git:
 	@git add .
 	@git commit -m "$m"
 	@git push
-
+	@echo "$(PU) Changes send to remote repository!!"
+	
 .PHONY: 
 
 # Collors discovered by makefile of cado-car, works similar to bash collors
@@ -104,8 +100,12 @@ git:
 #	@echo "$(RE)Removing $(OUT) $(RC)"
 
 # Colors
-GR	= \033[32;1m
-RE	= \033[31;1m
-YE	= \033[33;1m
-CY	= \033[36;1m
+BA  = \033[0;30m
+RE	= \033[0;31m
+GR	= \033[0;32m
+YE	= \033[0;33m
+BL  = \033[0;34m
+PU  = \033[0;35m
+CY	= \033[0;36m
+WH  = \033[0;37m
 RC	= \033[0m
