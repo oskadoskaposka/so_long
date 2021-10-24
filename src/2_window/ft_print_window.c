@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 04:15:46 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 18:14:40 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,9 @@ void	ft_print_window(void)
 	t_img	img;
 	int		i;
 	int		j;
-	int		x;
-	int		y;
 
 	i = 0;
 	j = 0;
-
-	img.floor.img = mlx_xpm_file_to_image(mlx.ptr, "imgs/chao50x50.xpm", &x, &y);
-	img.wall.img = mlx_xpm_file_to_image(mlx.ptr, "imgs/parede48x40.xpm", &x, &y);
-
 	while(j < map.lines)
 	{
 		while (i < map.len)
@@ -40,7 +34,4 @@ void	ft_print_window(void)
 		j++;
 		printf("j + 1");
 	}
-
-
-
 }
