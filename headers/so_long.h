@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 18:02:34 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 19:56:25 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,27 +45,32 @@ typedef struct s_info
 	int		y;
 }	t_info;
 
-
 typedef struct s_img
 {
 	t_info	floor;
 	t_info	wall;
 }	t_img;
 
+typedef struct s_so_long
+{
+	t_map	*map;
+	t_mlx	*mlx;
+	t_img	*img;
+}	t_config;
 
 /* ************************************************************************** */
 /*                              MAP FUNCTION                                  */
 /* ************************************************************************** */
-int		ft_count_lines(t_map *map);
-void	ft_save_map(t_map *map);
-void	ft_check_map_values (t_map *map);
-void	ft_map_configuration(void);
+int		ft_count_lines(t_config *config);
+void	ft_save_map(t_config *config);
+void	ft_check_map_values(t_config *config);
+void	ft_map_configuration(t_config *config);
 
 /* ************************************************************************** */
 /*                              WINDOW FUNCTION                               */
 /* ************************************************************************** */
-void	ft_create_window(void);
-void	ft_config_images(void);
-void	ft_print_window(void);
+void	ft_create_window(t_config *config);
+void	ft_config_images(t_config *config);
+void	ft_print_window(t_config *config);
 
 #endif

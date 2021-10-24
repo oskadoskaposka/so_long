@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 19:01:36 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 19:51:22 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 int	main(void)
 {
-	ft_map_configuration();
-	ft_create_window();
+	t_config	config;
+
+	ft_map_configuration(&config);
+	ft_create_window(&config);
 
 	return (0);
 }

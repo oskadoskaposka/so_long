@@ -6,29 +6,16 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:25:00 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 19:11:58 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 19:55:50 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/so_long.h"
 
-void	ft_config_images(void)
+void	ft_config_images(t_config *config)
 {
-	t_img	img;
-	t_mlx	mlx;
-	void 	*teste;
-	
-	teste = mlx_xpm_file_to_image(mlx.ptr,"../imgs/chao50x50.xpm", &img.floor.x, &img.floor.y);
-	
-//	img.floor.img = mlx_xpm_file_to_image(mlx.ptr, "../imgs/chao50x50.xpm", &img.floor.x, &img.floor.y);
-//	img.wall.img = mlx_xpm_file_to_image(mlx.ptr, "../imgs/parede48x40.xpm", &img.wall.x, &img.wall.y);
+	config->img->floor.img = mlx_xpm_file_to_image(config->mlx->ptr, "../imgs/chao50x50.xpm", &config->img->floor.x, &config->img->floor.y);
+	config->img->wall.img = mlx_xpm_file_to_image(config->mlx->ptr, "../imgs/parede48x40.xpm", &config->img->wall.x, &config->img->wall.y);
 
-	int		i;
-	int		j;
-
-	i = 0;
-	j = 0;
-	printf("%p", teste);
-//	mlx_put_image_to_window(mlx.ptr, mlx.ptr_win, teste, 100, 100);
-
+	ft_print_window(config);
 }
