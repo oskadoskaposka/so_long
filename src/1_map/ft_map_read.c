@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 01:09:49 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 01:24:45 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ void	ft_save_map(t_map *map)
 	char	*str;
 
 	i = 0;
-	ft_count_lines(map);
 	fd = open(map->path_map, O_RDONLY);
 	map->map = malloc((map->len) * (map->lines) * sizeof(char *));
 	while (i < map->lines)
@@ -60,7 +59,8 @@ void	ft_map_configuration(void)
 {
 	t_map	map;
 
-	map.path_map = "src/map/map.ber";
+	map.path_map = "src/1_map/map.ber";
+	ft_count_lines(&map);
 	ft_save_map(&map);
 	ft_check_map_values(&map);
 }
