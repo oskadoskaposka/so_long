@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/24 01:03:04 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/24 01:04:21 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,7 +90,7 @@ git:
 	@git add .
 	@git commit -m "$m"
 	@git push
-	@echo "$(PU) Changes send to remote repository!!"
+	@echo "$(PU)Changes send to remote repository!!"
 	
 .PHONY: 
 
