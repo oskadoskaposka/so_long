@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 01:28:40 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 18:16:38 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 19:11:11 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	ft_create_window(void)
 	ft_config_images();
 	//ft_print_window();
 	
-	mlx_loop(mlx.ptr);
+	//mlx_loop(mlx.ptr);
 }
