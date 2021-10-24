@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:25:00 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 18:44:01 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 18:55:47 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ void	ft_config_images(void)
 	i = 0;
 	j = 0;
 
-	mlx_put_image_to_window(mlx.ptr, mlx.ptr_win, teste, 0, 0);
+	//mlx_put_image_to_window(mlx.ptr, mlx.ptr_win, teste, 0, 0);
 
 }
