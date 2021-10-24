@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 01:42:00 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 03:27:19 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,20 @@ typedef struct s_mlx_config
 	void	*ptr_win;
 }	t_mlx;
 
+typedef struct s_info
+{
+	void	*img;
+	int		x;
+	int		y;
+}	t_info;
+
+
+typedef struct s_img
+{
+	t_info	floor;
+	t_info	wall;
+}	t_img;
+
 
 /* ************************************************************************** */
 /*                              MAP FUNCTION                                  */
@@ -51,5 +65,7 @@ void	ft_map_configuration(void);
 /*                              WINDOW FUNCTION                               */
 /* ************************************************************************** */
 void	ft_create_window(void);
+void	ft_config_images(void);
+void	ft_print_window(void);
 
 #endif
