@@ -6,11 +6,11 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 23:13:25 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/23 23:22:32 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/23 23:27:23 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/so_long.h"
+#include "../../headers/so_long.h"
 
 void	ft_check_map_values(t_map *map)
 {
@@ -24,4 +24,5 @@ void	ft_check_map_values(t_map *map)
 		printf("O valor de s é %s", map->map[i]);
 		i++;
 	}
+	printf("\n");
 }

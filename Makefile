@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/23 23:15:11 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/23 23:49:58 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,8 @@ PATH_LIBFT=Libft/
 # Files 
 ## .c files
 C_SOURCE=src/so_long.c \
-         src/ft_map_read.c \
-		 src/ft_check_values.c
+         src/map/ft_map_read.c \
+		 src/map/ft_check_values.c
 ## .h files
 H_SOURCE=$(PATH_HEADER)so_long.h
 ## Output files
@@ -59,8 +59,9 @@ $(NAME): $(LIBFT) $(MLX)
 #	@$(CC) -c $(C_SOURCE) -I $(PATH_HEADER) -o $@
 
 %.o: %.c
-		$(CC) $(CC_FLAGS) -c $< -o $@
+	@$(CC) $(CC_FLAGS) -c $< -o $@
 
+# the flag -s is for not run the message of changing directories
 $(MLX):
 	@cd mlx_linux; make
 
@@ -80,7 +81,7 @@ fclean:
 	@echo "Removing $(NAME)"
 
 r: fclean all
-	./so_long
+	@./so_long
 
 # Cleans all files and redo the compilation
 re: fclean all
@@ -96,3 +97,15 @@ git:
 	@git push
 
 .PHONY: 
+
+# Collors discovered by makefile of cado-car, works similar to bash collors
+# so, to use add in bash commands like the example line bellow, remember
+# always remove the collors in end of line, or terminal will be collored
+#	@echo "$(RE)Removing $(OUT) $(RC)"
+
+# Colors
+GR	= \033[32;1m
+RE	= \033[31;1m
+YE	= \033[33;1m
+CY	= \033[36;1m
+RC	= \033[0m

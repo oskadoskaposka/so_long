@@ -1,5 +1,6 @@
 So_long:
-	☐ Ler mapa e transformar em array
+	✔ Ler mapa e transformar em array @done (23/10/2021 23:39:11)
+	☐ criar função para configurar todo o mapa
 	☐ Checar se o mapa atende as regras
 	☐ Criar e configurar a janela
 	☐ Printar imagens na tela de acordo com o mapa recebido
