@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/23 23:19:16 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 01:11:17 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,11 @@ typedef struct s_map_config
 }	t_map;
 
 /* ************************************************************************** */
-/*                              FUNCTIONS                                     */
+/*                              MAP FUNCTIONS                                 */
 /* ************************************************************************** */
 int		ft_count_lines(t_map *map);
 void	ft_save_map(t_map *map);
 void	ft_check_map_values (t_map *map);
+void	ft_map_configuration(void);
 
 #endif

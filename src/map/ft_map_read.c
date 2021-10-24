@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/23 23:24:57 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 01:09:49 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,13 @@ void	ft_save_map(t_map *map)
 	}
 	free (str);
 	str = 0;
+}
+
+void	ft_map_configuration(void)
+{
+	t_map	map;
+
+	map.path_map = "src/map/map.ber";
+	ft_save_map(&map);
+	ft_check_map_values(&map);
 }
