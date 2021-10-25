@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 21:44:26 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 22:57:05 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,5 @@ void	ft_map_configuration(t_game *game)
 
 	ft_count_lines(game);
 	ft_save_map(game);
-	//ft_check_map_values(game);
+	ft_check_map_values(game);
 }
