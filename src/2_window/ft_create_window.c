@@ -6,18 +6,18 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 01:28:40 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 19:58:11 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 21:42:10 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/so_long.h"
 
-void	ft_create_window(t_config *config)
+void	ft_create_window(t_game *game)
 {
-	config->mlx->ptr = mlx_init();
-	config->mlx->ptr_win = mlx_new_window(config->mlx->ptr, (config->map->len * 50), (config->map->lines * 50),"so_long");
+	game->mlx.ptr = mlx_init();
+	game->mlx.ptr_win = mlx_new_window(game->mlx.ptr, (game->map.len * 50), (game->map.lines * 50),"so_long");
 
-	ft_config_images(config);
+	//ft_config_images(game);
 	
-	//mlx_loop(config->mlx->ptr);
+	//mlx_loop(game->mlx.ptr);
 }

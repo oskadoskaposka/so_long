@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 19:56:25 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/24 21:45:00 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 /* ************************************************************************** */
 /*                              STRUCT                                        */
 /* ************************************************************************** */
-typedef struct s_map_config
+typedef struct s_map
 {
 	char	**map;
 	char	*path_map;
@@ -32,7 +32,7 @@ typedef struct s_map_config
 	int		len;
 }	t_map;
 
-typedef struct s_mlx_config
+typedef struct s_mlx
 {
 	void	*ptr;
 	void	*ptr_win;
@@ -51,26 +51,26 @@ typedef struct s_img
 	t_info	wall;
 }	t_img;
 
-typedef struct s_so_long
+typedef struct s_game
 {
-	t_map	*map;
-	t_mlx	*mlx;
-	t_img	*img;
-}	t_config;
+	t_map	map;
+	t_mlx	mlx;
+	t_img	img;
+}	t_game;
 
 /* ************************************************************************** */
 /*                              MAP FUNCTION                                  */
 /* ************************************************************************** */
-int		ft_count_lines(t_config *config);
-void	ft_save_map(t_config *config);
-void	ft_check_map_values(t_config *config);
-void	ft_map_configuration(t_config *config);
+int		ft_count_lines(t_game *game);
+void	ft_save_map(t_game *game);
+void	ft_check_map_values(t_game *game);
+void	ft_map_configuration(t_game *game);
 
 /* ************************************************************************** */
 /*                              WINDOW FUNCTION                               */
 /* ************************************************************************** */
-void	ft_create_window(t_config *config);
-void	ft_config_images(t_config *config);
-void	ft_print_window(t_config *config);
+void	ft_create_window(t_game *game);
+void	ft_config_images(t_game *game);
+void	ft_print_window(t_game *game);
 
 #endif
