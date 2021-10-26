@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/24 21:43:55 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/25 19:47:04 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,8 @@ C_SOURCE=src/so_long.c \
 		 src/2_window/ft_create_window.c \
 		 src/2_window/ft_print_window.c \
 		 src/2_window/ft_config_images.c
+## example
+E_SOURCE=others/so_long_example.c
 ## .h files
 H_SOURCE=$(PATH_HEADER)so_long.h
 ## Output files
@@ -79,6 +81,10 @@ fclean:
 	@echo "$(RE)Removing Libft and $(NAME) .o and .a files!$(RC)"
 
 r: fclean all
+	@./so_long
+
+e:	fclean all
+	@$(CC) $(CC_FLAGS) $(E_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 	@./so_long
 
 # Cleans all files and redo the compilation

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 21:50:56 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/10/25 21:01:11 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,9 @@ typedef struct s_img
 {
 	t_info	floor;
 	t_info	wall;
+	t_info	player;
+	t_info	pickup;
+	t_info	gateway;
 }	t_img;
 
 typedef struct s_game
