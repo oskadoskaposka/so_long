@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/25 19:47:04 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/10/28 00:06:05 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,13 +72,13 @@ $(LIBFT):
 clean:
 	@make clean -s -C ./Libft
 	@rm -f $(OUT)
-	@echo "$(YE)Removing Libft and $(NAME) .o files!$(RC)"
+	@echo "$(YE)Removing $(NAME) .o files!$(RC)"
 
 fclean:
 	@make fclean -s -C ./Libft
 	@rm -f $(OUT)
 	@rm -f $(NAME)
-	@echo "$(RE)Removing Libft and $(NAME) .o and .a files!$(RC)"
+	@echo "$(RE)Removing $(NAME) .o and .a files!$(RC)"
 
 r: fclean all
 	@./so_long
