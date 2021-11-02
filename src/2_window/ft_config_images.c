@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:25:00 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:00:34 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 14:56:50 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,4 @@ void	ft_config_images(t_game *game)
 
 	game->img.wall.img = mlx_xpm_file_to_image(game->mlx.ptr, \
 	"imgs/wall.xpm", &game->img.wall.x, &game->img.wall.y);
-
-	ft_print_window(game);
 }

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:07:00 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 16:08:48 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ typedef struct s_map
 	char	*path_map;
 	int		lines;
 	int		len;
+	int		picks;
+	int		pl_picks;
 }	t_map;
 
 typedef struct s_mlx
@@ -76,5 +78,12 @@ void	ft_create_window(t_game *game);
 void	ft_config_images(t_game *game);
 void	ft_print_window(t_game *game);
 void	ft_print_item(t_game *game, char c, int i, int j);
+void	ft_check_window_values(t_game *game);
+void	ft_window_configuration(t_game *game);
+
+/* ************************************************************************** */
+/*                              WINDOW FUNCTION                               */
+/* ************************************************************************** */
+
 
 #endif

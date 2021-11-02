@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_values.c                                  :+:      :+:    :+:   */
+/*   ft_check_window_values.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/23 23:13:25 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:52:33 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/11/02 14:59:37 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/11/02 15:00:51 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/so_long.h"
 
-void	ft_check_map_values(t_game *game)
+void	ft_check_window_values(t_game *game)
 {
-	int	i;
-
-	i = 0;
-	ft_printf("\n");
-	ft_printf("O valor de lines é %d \n", game->map.lines);
-	ft_printf("O valor de len é %d \n\n", game->map.len);
-	while (i < game->map.lines)
-	{
-		ft_printf("O valor de s[%d] é %s", i, game->map.map[i]);
-		i++;
-	}
-	ft_printf("\n");
+	ft_printf("\nO total de muedinhas é: %i", game->map.picks);
 }

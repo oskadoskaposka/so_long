@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:08:04 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 14:49:50 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ void	ft_print_item(t_game *game, char c, int i, int j)
 	if (c == '1')
 		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, game->img.wall.img, i + 10, j);
 	else if (c == 'C')
+	{
 		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win,game->img.pickup.img, i, j);
+		game->map.picks += 1;
+	}
 	else if (c == 'E')
 		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win,game->img.gateway.img, i, j);
 	else if (c == 'P')

@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_values.c                                  :+:      :+:    :+:   */
+/*   ft_find.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/23 23:13:25 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:52:33 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/11/02 16:14:44 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/11/02 16:20:01 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/so_long.h"
+#include "../../libft.h"
 
-void	ft_check_map_values(t_game *game)
+int	ft_find(char *str, char c)
 {
 	int	i;
 
 	i = 0;
-	ft_printf("\n");
-	ft_printf("O valor de lines é %d \n", game->map.lines);
-	ft_printf("O valor de len é %d \n\n", game->map.len);
-	while (i < game->map.lines)
+	if (!*str || !c)
+		return (NULL);
+	while(*str != c)
 	{
-		ft_printf("O valor de s[%d] é %s", i, game->map.map[i]);
+		if (*str == NULL)
+			return (NULL);
+		str++;
 		i++;
 	}
-	ft_printf("\n");
+	return (i);
 }

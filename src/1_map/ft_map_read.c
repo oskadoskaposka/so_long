@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/24 23:38:42 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 14:51:50 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ void	ft_save_map(t_game *game)
 
 void	ft_map_configuration(t_game *game)
 {
-	game->map.path_map = "src/1_map/map.ber";
 	ft_count_lines(game);
 	ft_save_map(game);
 	ft_check_map_values(game);

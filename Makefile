@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/10/28 00:07:13 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/02 15:01:36 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ C_SOURCE=src/so_long.c \
 		 src/1_map/ft_check_values.c \
 		 src/2_window/ft_create_window.c \
 		 src/2_window/ft_print_window.c \
-		 src/2_window/ft_config_images.c
+		 src/2_window/ft_config_images.c \
+		 src/2_window/ft_check_window_values.c
 ## example
 E_SOURCE=others/so_long_example.c
 ## .h files
