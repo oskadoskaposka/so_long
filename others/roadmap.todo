@@ -1,15 +1,17 @@
 So_long:
 	✔ Ler mapa e transformar em array @done (23/10/2021 23:39:11)
 	✔ criar função para configurar todo o mapa @done (24/10/2021 01:13:53)
-	☐ Checar se o mapa atende as regras
 	✔ Criar a janela @done (24/10/2021 03:08:03)
-	☐ Configurar a janela conforme subject (fechar, minimizar)
-	☐ Printar imagens na tela de acordo com o mapa recebido
+	✔ Printar imagens na tela de acordo com o mapa recebido @done (02/11/2021 18:58:41)
 	✔ Sprite do chao @done (24/10/2021 03:08:28)
 	✔ Sprite da parede @done (24/10/2021 03:08:28)
-	☐ Sprite do char
-	☐ Sprite do coletavel
-	☐ Sprite da saida
-	☐ Movimentar personagem
-	☐ Coletar itens
-	☐ 
+	✔ Sprite do char @done (02/11/2021 18:58:43)
+	✔ Sprite do coletavel @done (02/11/2021 18:58:43)
+	✔ Sprite da saida @done (02/11/2021 18:58:44)
+	✔ Movimentar personagem @done (02/11/2021 18:58:45)
+	✔ Coletar itens @done (02/11/2021 18:58:45)
+	☐ Checar se o mapa atende as regras
+	☐ Configurar a janela conforme subject (fechar, minimizar)
+	☐ Colocar a leitura do map em argv e argc
+	☐ Sair quando chegar na porta e depois de pegar as moedinhas
+
