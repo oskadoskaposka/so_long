@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:14:44 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 16:28:17 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 18:57:17 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_find(const char *str, char c)
 	i = 0;
 	if (!*str || !c)
 		return (0);
-	while(*str != c)
+	while (*str != c)
 	{
 		if (*str == '\0')
 			return (0);

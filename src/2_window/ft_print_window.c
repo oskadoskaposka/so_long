@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 18:48:56 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 18:52:47 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,28 +25,32 @@ void	ft_print_window(t_game *game)
 		{
 			mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, \
 			game->img.floor.img, (i * 50), (j * 50));
-			ft_print_item(game, game->map.map[j][i],(i * 50), (j * 50));
+			ft_print_item(game, game->map.map[j][i], (i * 50), (j * 50));
 			i++;
 		}
 		i = 0;
-		j++;		
+		j++;
 	}
 }
 
 void	ft_print_item(t_game *game, char c, int i, int j)
 {
 	if (c == '1')
-		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, game->img.wall.img, i + 10, j);
+		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, \
+		game->img.wall.img, i + 10, j);
 	else if (c == 'C')
 	{
-		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win,game->img.pickup.img, i, j);
+		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, \
+		game->img.pickup.img, i, j);
 		game->map.picks_temp += 1;
 	}
 	else if (c == 'E')
-		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win,game->img.gateway.img, i, j);
+		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, \
+		game->img.gateway.img, i, j);
 	else if (c == 'P')
 	{
-		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win,game->img.player.img, i, j);
+		mlx_put_image_to_window(game->mlx.ptr, game->mlx.ptr_win, \
+		game->img.player.img, i, j);
 		game->map.pl_len = (i / 50);
 		game->map.pl_line = (j / 50);
 	}
