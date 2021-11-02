@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/10/25 21:01:11 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/02 14:07:00 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,6 @@ void	ft_map_configuration(t_game *game);
 void	ft_create_window(t_game *game);
 void	ft_config_images(t_game *game);
 void	ft_print_window(t_game *game);
+void	ft_print_item(t_game *game, char c, int i, int j);
 
 #endif
