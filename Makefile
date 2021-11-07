@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/02 18:33:04 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/07 12:04:55 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,13 +26,14 @@ PATH_LIBFT=Libft/
 C_SOURCE=src/so_long.c \
          src/1_map/ft_map_read.c \
 		 src/1_map/ft_check_values.c \
+		 src/1_map/ft_map_check.c \
 		 src/2_window/ft_create_window.c \
 		 src/2_window/ft_print_window.c \
 		 src/2_window/ft_config_images.c \
 		 src/2_window/ft_check_window_values.c \
 		 src/3_moviments/ft_player_moves_len.c \
 		 src/3_moviments/ft_player_moves_lines.c \
-		 src/3_moviments/ft_input.c
+		 src/3_moviments/ft_input.c \
 ## example
 E_SOURCE=others/so_long_example.c
 ## .h files
@@ -85,7 +86,7 @@ fclean:
 	@echo "$(RE)Removing $(NAME) .o and .a files!$(RC)"
 
 r: fclean all
-	@./so_long
+	@./so_long maps/map1.ber
 
 e:	fclean all
 	@$(CC) $(CC_FLAGS) $(E_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 14:51:50 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/07 12:56:38 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,13 @@ int	ft_count_lines(t_game *game)
 	s = get_next_line(fd);
 	while (s)
 	{
-		game->map.len = ft_strlen(s);
+		if (game->map.len == 0)
+			game->map.len = ft_strlen(s);
+		else if (game->map.len != ft_strlen(s))
+		{
+			ft_printf("\nError!\nMap isn't rectangular");
+			return (0);
+		}
 		s = get_next_line(fd);
 		i++;
 	}
@@ -60,5 +66,5 @@ void	ft_map_configuration(t_game *game)
 {
 	ft_count_lines(game);
 	ft_save_map(game);
-	ft_check_map_values(game);
+	//ft_check_map_values(game);
 }

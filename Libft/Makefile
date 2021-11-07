@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/17 01:47:09 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/02 16:24:44 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/07 12:54:28 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,7 +62,8 @@ C_SOURCE=src/original/ft_isalnum.c \
 		 src/printf/ft_print_u.c \
 		 src/printf/ft_print_x.c \
 		 src/printf/ft_printf.c \
-		 src/personal/ft_find.c
+		 src/personal/ft_find.c \
+		 src/personal/ft_nnl_strlen.c
 
 # .h files
 H_SOURCE=libft.h
