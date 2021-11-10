@@ -14,4 +14,4 @@ So_long:
 	☐ Configurar a janela conforme subject (fechar, minimizar)
 	☐ Colocar a leitura do map em argv e argc
 	☐ Sair quando chegar na porta e depois de pegar as moedinhas
-
+	☐ Fazer o mapa dar erro se nao for retangular

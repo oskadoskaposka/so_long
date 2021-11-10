@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/07 12:02:17 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/07 21:19:00 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct s_map
 	char	*path_map;
 	int		lines;
 	int		len;
+	char	*layout;
 	int		picks_temp;
 	int		picks;
 	int		pl_picks;

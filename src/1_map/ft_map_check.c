@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 10:56:49 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/07 12:44:19 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/09 23:21:02 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,63 @@ int	ft_check_walls(t_game *game)
 			return (0);
 	}
 	return (1);
+}
+
+int	ft_check_player (t_game *game)
+{
+	int	x;
+	int	y;
+
+	x = 0;
+	y = 0;
+	while (y < game->map.lines)
+	{
+		while (x < game->map.len)
+		{
+			if (game->map.map[y][x] == 'P')
+				return (1);
+			x++;
+		}
+		y++;
+	}
+	return (0);
+}
+
+int	ft_check_exit (t_game *game)
+{
+	int	x;
+	int	y;
+
+	x = 0;
+	y = 0;
+	while (y < game->map.lines)
+	{
+		while (x < game->map.len)
+		{
+			if (game->map.map[y][x] == 'E')
+				return (1);
+			x++;
+		}
+		y++;
+	}
+	return (0);
+}
+
+int	ft_check_collect(t_game *game)
+{
+	int	x;
+	int	y;
+
+	x = 0;
+	y = 0;
+	while (y < game->map.lines)
+	{
+		while (x < game->map.len)
+		{
+			if (game->map.map[y][x] == 'C')
+				return (1);
+			x++;
+		}
+		y++;
+	}
 }
