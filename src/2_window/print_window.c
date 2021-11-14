@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 18:52:47 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 14:00:11 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,9 @@ void	ft_print_item(t_game *game, char c, int i, int j)
 		game->map.pl_len = (i / 50);
 		game->map.pl_line = (j / 50);
 	}
+}
+
+void	ft_save_state(t_game *game)
+{
+	game->map.picks = game->map.picks_temp;
 }

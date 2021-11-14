@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 12:03:15 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 13:53:48 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ typedef struct s_map
 	char	*path_map;
 	int		lines;
 	int		len;
-	char	*layout;
 	int		picks_temp;
 	int		picks;
 	int		pl_picks;
@@ -88,6 +87,7 @@ void	ft_print_item(t_game *game, char c, int i, int j);
 void	ft_check_window_values(t_game *game);
 void	ft_window_configuration(t_game *game);
 int		ft_exit_game(t_game *game);
+void	ft_save_state(t_game *game);
 
 /* ************************************************************************** */
 /*                              MOVIMENT FUNCTION                             */

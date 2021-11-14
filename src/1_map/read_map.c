@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_map_read.c                                      :+:      :+:    :+:   */
+/*   read_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 12:35:14 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 13:49:17 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,24 +44,14 @@ void	ft_save_map(t_game *game)
 	fd = open(game->map.path_map, O_RDONLY);
 	game->map.map = malloc((game->map.len) * (game->map.lines) * \
 	sizeof(char *));
-	game->map.layout = malloc(game->map.lines);
 	while (i < game->map.lines)
 	{
 		str = get_next_line(fd);
 		game->map.map[i] = ft_strdup(str);
-		game->map.layout[i] = ft_strlen(str);
 		free(str);
 		str = 0;
 		i++;
 	}
 	free (str);
 	str = 0;
-	ft_printf("O layout é : %s \n", game->map.layout);
-}
-
-void	ft_map_configuration(t_game *game)
-{
-	ft_count_lines(game);
-	ft_save_map(game);
-	//ft_check_map_values(game);
 }

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 12:35:56 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 13:00:48 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	ft_sucess(t_game *game)
 		ft_map_configuration(game);
 		ft_window_configuration(game);
 		mlx_key_hook(game->mlx.ptr_win, ft_input, game);
+		mlx_hook(game->mlx.ptr_win, 17, 1L << 0, ft_exit_game, game);
 		mlx_loop(game->mlx.ptr);
 	}
 	else
