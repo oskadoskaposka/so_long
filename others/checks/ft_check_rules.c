@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_map_2.c                                      :+:      :+:    :+:   */
+/*   ft_check_rules.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/14 14:21:43 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 16:43:55 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/11/14 16:16:13 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/11/14 16:43:32 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/so_long.h"
 
-int	ft_check_collect(t_game *game)
+void	ft_check_rules(t_game *game)
 {
-	int	x;
-	int	y;
-
-	x = 0;
-	y = 0;
-	while (y < game->map.lines)
-	{
-		while (x < game->map.len)
-		{
-			if (game->map.map[y][x] == 'C')
-				return (1);
-			x++;
-		}
-		x = 0;
-		y++;
-	}
-	return (0);
+	ft_printf("O valor de ft_check_extension é: %i\n", ft_check_extension(game));
+	ft_printf("O valor de ft_check_walls é: %i \n", ft_check_walls(game));
+	ft_printf("O valor de ft_check_player é: %i \n", ft_check_player(game));
+	ft_printf("O valor de ft_check_exit é: %i \n", ft_check_exit(game));
+	ft_printf("O valor de ft_check_collect é: %i \n", ft_check_collect(game));
 }

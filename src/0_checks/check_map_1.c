@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 10:56:49 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 14:24:08 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 16:45:16 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,19 @@ int	ft_check_walls(t_game *game)
 	y = 0;
 	while (x < game->map.len)
 	{
-		if (game->map.map[0][x] != 1)
+		if (game->map.map[0][x] != '1')
 			return (0);
-		if (game->map.map[game->map.lines - 1][x] != 1)
+		if (game->map.map[game->map.lines - 1][x] != '1')
 			return (0);
 		x++;
 	}
 	while (y < game->map.lines)
 	{
-		if (game->map.map[y][0] != 0)
+		if (game->map.map[y][0] != '1')
 			return (0);
-		if (game->map.map[y][game->map.len - 1] != 1)
+		if (game->map.map[y][game->map.len - 1] != '1')
 			return (0);
+		y++;
 	}
 	return (1);
 }
@@ -52,19 +53,24 @@ int	ft_check_player(t_game *game)
 {
 	int	x;
 	int	y;
+	int	num;
 
 	x = 0;
 	y = 0;
+	num = 0;
 	while (y < game->map.lines)
 	{
 		while (x < game->map.len)
 		{
 			if (game->map.map[y][x] == 'P')
-				return (1);
+				num += 1;
 			x++;
 		}
+		x = 0;
 		y++;
 	}
+	if (num == 1)
+		return (1);
 	return (0);
 }
 
@@ -83,6 +89,7 @@ int	ft_check_exit(t_game *game)
 				return (1);
 			x++;
 		}
+		x = 0;
 		y++;
 	}
 	return (0);

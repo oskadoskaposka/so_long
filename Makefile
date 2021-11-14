@@ -6,22 +6,28 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/14 14:23:22 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/14 16:19:52 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Name of the project
+
+# **************************************************************************** #
+# 									VARIABLES								   #
+# **************************************************************************** #
+
+# ----------------------------------PROJECT----------------------------------- #
+## project name
 NAME=so_long
 
-# Paths
-## mlx path
-PATH_MLX=mlx_linux/
-## headers path
-PATH_HEADER=headers/
-## libft path
-PATH_LIBFT=Libft/
+## .h files
+H_SOURCE=$(PATH_HEADER)so_long.h
 
-# Files 
+## Output files
+OUT=$(C_SOURCE:.c=.o)
+
+## example
+E_SOURCE=others/so_long_example.c
+
 ## .c files
 C_SOURCE=src/so_long.c \
 		 src/0_checks/check_map_1.c \
@@ -37,33 +43,55 @@ C_SOURCE=src/so_long.c \
 		 src/3_moviments/vertical_moves.c \
 		 \
 		 others/checks/ft_check_values.c \
-		 others/checks/ft_check_window_values.c 
-## example
-E_SOURCE=others/so_long_example.c
-## .h files
-H_SOURCE=$(PATH_HEADER)so_long.h
-## Output files
-OUT=$(C_SOURCE:.c=.o)
+		 others/checks/ft_check_window_values.c \
+		 others/checks/ft_check_rules.c
+
+# ----------------------------------PATHS------------------------------------- #
+## mlx path
+PATH_MLX=mlx_linux/
+
+## headers path
+PATH_HEADER=headers/
+
+## libft path
+PATH_LIBFT=Libft/
+
 ## mlx
 MLX=$(PATH_MLX)libmlx.a
+
 ## libft
 LIBFT=$(PATH_LIBFT)libft.a
 
-# Compiler
+# ----------------------------------FLAGS------------------------------------- #
+## Compiler
 CC=clang
-# Flags for compiler
+
+## Flags for compiler
 CC_FLAGS=-Wall         \
          -Wextra      \
          -Werror
-# Flags mlx
+		 
+## mlx flags
 MLX_FLAGS=-L. -lXext -L. -lX11
 
-############################  RULES
+# ----------------------------------COLORS------------------------------------ #
+## Colors
+BA  = \033[0;30m
+RE	= \033[0;31m
+GR	= \033[0;32m
+YE	= \033[0;33m
+BL  = \033[0;34m
+PU  = \033[0;35m
+CY	= \033[0;36m
+WH  = \033[0;37m
+RC	= \033[0m
 
-# Compilation and linking
+# **************************************************************************** #
+# 									RULES									   #
+# **************************************************************************** #
+
 all: $(NAME)
 
-# This rule compiles 
 $(NAME): $(LIBFT) $(MLX)
 	@$(CC) $(CC_FLAGS) $(C_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 	@echo "$(GR)Creating $(NAME) project!$(RC)"
@@ -89,18 +117,34 @@ fclean:
 	@rm -f $(NAME)
 	@echo "$(RE)Removing $(NAME) .o and .a files!$(RC)"
 
-r: fclean all
-	@./so_long maps/map1.ber
-
 e:	fclean all
 	@$(CC) $(CC_FLAGS) $(E_SOURCE) $(MLX) $(LIBFT) $(MLX_FLAGS) -o $(NAME)
 	@./so_long
 
-# Cleans all files and redo the compilation
 re: fclean all
 
-# Cleans all files, redo the compilation and cleans .o
 rec: fclean all clean
+
+r1: fclean all
+	@./so_long maps/map1.ber
+
+r2: fclean all
+	@./so_long maps/map2.ber
+
+r3: fclean all
+	@./so_long maps/map3.ber
+
+r4: fclean all
+	@./so_long maps/map4.ber
+
+r5: fclean all
+	@./so_long maps/map5.ber
+
+r6: fclean all
+	@./so_long maps/map6.ber
+
+r7: fclean all
+	@./so_long maps/map7.ber
 
 # To use this command in terminal write:
 # make git m="your message"
@@ -109,21 +153,5 @@ git:
 	@git commit -m "$m"
 	@git push
 	@echo "$(PU)Changes send to remote repository!!$(RC)"
-	
+
 .PHONY: 
-
-# Collors discovered by makefile of cado-car, works similar to bash collors
-# so, to use add in bash commands like the example line bellow, remember
-# always remove the collors in end of line, or terminal will be collored
-#	@echo "$(RE)Removing $(OUT) $(RC)"
-
-# Colors
-BA  = \033[0;30m
-RE	= \033[0;31m
-GR	= \033[0;32m
-YE	= \033[0;33m
-BL  = \033[0;34m
-PU  = \033[0;35m
-CY	= \033[0;36m
-WH  = \033[0;37m
-RC	= \033[0m
