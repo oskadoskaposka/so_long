@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 16:47:38 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 17:00:56 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	main(int argc, char **argv)
 {
 	t_game	game;
 
+	ft_bzero(&game, sizeof(t_game));
 	if (argc == 2)
 	{
 		game.map.path_map = argv[1];

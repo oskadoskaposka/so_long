@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/14 16:19:52 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/14 17:06:59 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -145,6 +145,9 @@ r6: fclean all
 
 r7: fclean all
 	@./so_long maps/map7.ber
+
+r8: fclean all
+	@./so_long maps/map8.ber
 
 # To use this command in terminal write:
 # make git m="your message"
