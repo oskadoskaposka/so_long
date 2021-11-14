@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/07 12:04:55 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/14 12:21:02 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ C_SOURCE=src/so_long.c \
 		 src/2_window/ft_print_window.c \
 		 src/2_window/ft_config_images.c \
 		 src/2_window/ft_check_window_values.c \
+		 src/2_window/ft_exit_game.c \
 		 src/3_moviments/ft_player_moves_len.c \
 		 src/3_moviments/ft_player_moves_lines.c \
 		 src/3_moviments/ft_input.c \

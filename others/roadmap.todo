@@ -12,6 +12,6 @@ So_long:
 	✔ Coletar itens @done (02/11/2021 18:58:45)
 	☐ Checar se o mapa atende as regras
 	☐ Configurar a janela conforme subject (fechar, minimizar)
-	☐ Colocar a leitura do map em argv e argc
+	✔ Colocar a leitura do map em argv e argc @done (10/11/2021 00:18:57)
 	☐ Sair quando chegar na porta e depois de pegar as moedinhas
 	☐ Fazer o mapa dar erro se nao for retangular

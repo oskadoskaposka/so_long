@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:26:36 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/02 18:54:31 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 12:15:05 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_player_move_line(t_game *game)
 	}
 	if (game->map.map[game->map.pl_nm][game->map.pl_len] == 'E')
 		if (game->map.picks == game->map.pl_picks)
-			ft_printf("GAME OVER");
+			ft_exit_game(game);
 }
 
 void	ft_player_move_up(t_game *game)

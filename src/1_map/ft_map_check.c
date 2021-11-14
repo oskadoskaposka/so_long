@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 10:56:49 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/09 23:21:02 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 12:35:00 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_check_walls(t_game *game)
 	return (1);
 }
 
-int	ft_check_player (t_game *game)
+int	ft_check_player(t_game *game)
 {
 	int	x;
 	int	y;
@@ -68,7 +68,7 @@ int	ft_check_player (t_game *game)
 	return (0);
 }
 
-int	ft_check_exit (t_game *game)
+int	ft_check_exit(t_game *game)
 {
 	int	x;
 	int	y;
@@ -105,4 +105,5 @@ int	ft_check_collect(t_game *game)
 		}
 		y++;
 	}
+	return (0);
 }
