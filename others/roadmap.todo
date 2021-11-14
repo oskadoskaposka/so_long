@@ -17,8 +17,8 @@ So_long:
 	☐ Fazer o mapa dar erro se nao for retangular
 	☐ Printar passos no terminal
 	☐ Corrigir leaks
-	☐ Refatorar as funçoes para melhor explicação
-	☐ Remover comentarios nos arquivos
+	✔ Refatorar as funçoes para melhor explicação @done (14/11/2021 14:34:24)
+	✔ Remover comentarios nos arquivos @done (14/11/2021 14:34:27)
 	☐ Remover others
 	☐ Remover funções de comentarios
 	☐ Enviar nova função da Libft para o github

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 14:29:05 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 14:33:08 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,6 +111,5 @@ void	ft_player_move_line(t_game *game);
 /* ************************************************************************** */
 void	ft_check_map_values(t_game *game);
 void	ft_check_window_values(t_game *game);
-
 
 #endif
