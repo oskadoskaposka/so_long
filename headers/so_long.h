@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 13:53:48 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 14:29:05 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,36 +68,49 @@ typedef struct s_game
 }	t_game;
 
 /* ************************************************************************** */
-/*                              MAP FUNCTION                                  */
+/*                              	CHECK                                     */
 /* ************************************************************************** */
-int		ft_count_lines(t_game *game);
-void	ft_save_map(t_game *game);
-void	ft_check_map_values(t_game *game);
-void	ft_map_configuration(t_game *game);
-int		ft_check_extension(t_game *game);
 void	ft_sucess(t_game *game);
+int		ft_check_extension(t_game *game);
+int		ft_check_walls(t_game *game);
+int		ft_check_player(t_game *game);
+int		ft_check_exit(t_game *game);
+int		ft_check_collect(t_game *game);
+int		ft_exit_game(t_game *game);
 
 /* ************************************************************************** */
-/*                              WINDOW FUNCTION                               */
+/*                              	MAP                                       */
 /* ************************************************************************** */
+void	ft_map_configuration(t_game *game);
+int		ft_count_lines(t_game *game);
+void	ft_save_map(t_game *game);
+
+/* ************************************************************************** */
+/*                              	WINDOW                                    */
+/* ************************************************************************** */
+void	ft_window_configuration(t_game *game);
 void	ft_create_window(t_game *game);
 void	ft_config_images(t_game *game);
 void	ft_print_window(t_game *game);
 void	ft_print_item(t_game *game, char c, int i, int j);
-void	ft_check_window_values(t_game *game);
-void	ft_window_configuration(t_game *game);
-int		ft_exit_game(t_game *game);
 void	ft_save_state(t_game *game);
 
 /* ************************************************************************** */
-/*                              MOVIMENT FUNCTION                             */
+/*                              	MOVIMENT                                  */
 /* ************************************************************************** */
-void	ft_player_move_len(t_game *game);
+int		ft_input(int key, t_game *game);
 void	ft_player_move_right(t_game *game);
 void	ft_player_move_left(t_game *game);
-void	ft_player_move_line(t_game *game);
+void	ft_player_move_len(t_game *game);
 void	ft_player_move_up(t_game *game);
 void	ft_player_move_down(t_game *game);
-int		ft_input(int key, t_game *game);
+void	ft_player_move_line(t_game *game);
+
+/* ************************************************************************** */
+/*                              	OTHER                                     */
+/* ************************************************************************** */
+void	ft_check_map_values(t_game *game);
+void	ft_check_window_values(t_game *game);
+
 
 #endif
