@@ -15,7 +15,7 @@ So_long:
 	✔ Colocar a leitura do map em argv e argc @done (10/11/2021 00:18:57)
 	✔ Sair quando chegar na porta e depois de pegar as moedinhas @done (14/11/2021 13:01:40)
 	☐ Fazer o mapa dar erro se nao for retangular
-	☐ Printar passos no terminal
+	✔ Printar passos no terminal @done (14/11/2021 17:29:52)
 	☐ Corrigir leaks
 	✔ Refatorar as funçoes para melhor explicação @done (14/11/2021 14:34:24)
 	✔ Remover comentarios nos arquivos @done (14/11/2021 14:34:27)

@@ -10,4 +10,4 @@ typedef struct s_fruta
     int pera;   //4
     char *feira; //4   //12
 
-}tp_fruta;
+}t_fruta;
