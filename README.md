@@ -92,6 +92,8 @@ se jogar uma imagem em cima da outra (sempre jogar um put image) acaba consumind
 </p>
 
 
+---------------testar leaks
+<p>https://stackoverflow.com/questions/5134891/how-do-i-use-valgrind-to-find-memory-leaks#:~:text=To%20run%20Valgrind%2C%20pass%20the,any%20parameters%20to%20the%20program).&text=The%20flags%20are%2C%20in%20short,in%20the%20%22full%22%20report</p>
 <!-- 
 
 Testar essas assets

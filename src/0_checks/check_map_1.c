@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 10:56:49 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 16:45:16 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:21:58 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,15 @@ int	ft_check_extension(t_game *game)
 
 	ext = ft_substr(game->map.path_map, ft_strlen(game->map.path_map) - 4, 4);
 	if (ft_strncmp(ext, ".ber", 4) == 0)
+	{
+		free(ext);
 		return (1);
+	}
 	else
+	{
+		free(ext);
 		return (0);
+	}
 }
 
 int	ft_check_walls(t_game *game)

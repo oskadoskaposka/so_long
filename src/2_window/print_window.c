@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 17:31:15 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:44:55 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void	ft_print_window(t_game *game)
 
 	i = 0;
 	j = 0;
+	ft_config_images(game);
 	while (j < game->map.lines)
 	{
 		while (i < game->map.len)
@@ -31,6 +32,7 @@ void	ft_print_window(t_game *game)
 		i = 0;
 		j++;
 	}
+	ft_destroy_images(game);
 }
 
 void	ft_print_item(t_game *game, char c, int i, int j)

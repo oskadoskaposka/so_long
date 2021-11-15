@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/14 17:06:59 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/14 18:47:22 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -148,6 +148,33 @@ r7: fclean all
 
 r8: fclean all
 	@./so_long maps/map8.ber
+
+v1o:	fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind-out.txt ./so_long maps/map1.ber
+
+v1:	fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map1.ber
+
+v2: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map2.ber
+
+v3: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map3.ber
+
+v4: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map4.ber
+
+v5: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map5.ber
+
+v6: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map6.ber
+
+v7: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map7.ber
+
+v8: fclean all
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./so_long maps/map8.ber
 
 # To use this command in terminal write:
 # make git m="your message"

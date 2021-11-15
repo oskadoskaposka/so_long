@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 16:56:30 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:53:55 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int		ft_check_walls(t_game *game);
 int		ft_check_player(t_game *game);
 int		ft_check_exit(t_game *game);
 int		ft_check_collect(t_game *game);
+void	ft_free_struct(t_game *game);
 int		ft_exit_game(t_game *game);
 
 /* ************************************************************************** */
@@ -92,6 +93,7 @@ void	ft_save_map(t_game *game);
 void	ft_window_configuration(t_game *game);
 void	ft_create_window(t_game *game);
 void	ft_config_images(t_game *game);
+void	ft_destroy_images(t_game *game);
 void	ft_print_window(t_game *game);
 void	ft_print_item(t_game *game, char c, int i, int j);
 void	ft_save_state(t_game *game);

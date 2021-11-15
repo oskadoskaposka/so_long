@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 01:28:40 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 13:59:17 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:43:17 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,13 @@ void	ft_config_images(t_game *game)
 	"imgs/hero.xpm", &game->img.player.x, &game->img.player.y);
 	game->img.wall.img = mlx_xpm_file_to_image(game->mlx.ptr, \
 	"imgs/wall.xpm", &game->img.wall.x, &game->img.wall.y);
+}
+
+void	ft_destroy_images(t_game *game)
+{
+	mlx_destroy_image(game->mlx.ptr, game->img.floor.img);
+	mlx_destroy_image(game->mlx.ptr, game->img.gateway.img);
+	mlx_destroy_image(game->mlx.ptr, game->img.pickup.img);
+	mlx_destroy_image(game->mlx.ptr, game->img.player.img);
+	mlx_destroy_image(game->mlx.ptr, game->img.wall.img);
 }

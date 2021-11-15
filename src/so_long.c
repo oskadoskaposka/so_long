@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 17:30:38 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:53:25 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,13 @@ void	ft_sucess(t_game *game)
 			ft_check_exit(game) && ft_check_collect(game))
 			ft_window_configuration(game);
 		else
+		{
 			ft_printf("\nError \nThe map does not meet the game rules!\n\n");
+			ft_free_struct(game);
+		}
 	}
 	else
+	{
 		ft_printf("\nError \nWrong map extension!\n\n");
+	}
 }

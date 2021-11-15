@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 13:49:17 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/14 18:26:24 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int	ft_count_lines(t_game *game)
 	while (s)
 	{
 		game->map.len = ft_strlen(s);
+		free (s);
+		s = 0;
 		s = get_next_line(fd);
 		i++;
 	}
