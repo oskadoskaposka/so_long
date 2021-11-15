@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 18:44:55 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/15 00:10:26 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void	ft_print_item(t_game *game, char c, int i, int j)
 	else if (c != '0')
 	{
 		ft_printf("\nError \nWrong character in map file!\n\n");
+		ft_destroy_images(game);
 		ft_exit_game(game);
 	}
 }

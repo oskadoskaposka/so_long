@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:22:55 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 18:26:24 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/15 00:28:29 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,7 @@ void	ft_save_map(t_game *game)
 
 	i = 0;
 	fd = open(game->map.path_map, O_RDONLY);
-	game->map.map = malloc((game->map.len) * (game->map.lines) * \
-	sizeof(char *));
+	game->map.map = calloc(sizeof(char *),(game->map.len) * (game->map.lines));
 	while (i < game->map.lines)
 	{
 		str = get_next_line(fd);
