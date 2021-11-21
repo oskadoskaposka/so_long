@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 12:00:35 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 18:18:13 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:45:21 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	ft_free_struct(t_game *game)
 		i++;
 	}
 	free(game->map.map);
+	ft_printf("Game Over!\n");
 }
 
 int	ft_exit_game(t_game *game)

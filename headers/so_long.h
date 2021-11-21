@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 00:32:33 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/21 16:24:08 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:42:09 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int		ft_check_walls(t_game *game);
 int		ft_check_player(t_game *game);
 int		ft_check_exit(t_game *game);
 int		ft_check_collect(t_game *game);
+int		ft_check_rect(t_game *game);
 void	ft_free_struct(t_game *game);
 int		ft_exit_game(t_game *game);
 
@@ -109,6 +110,7 @@ void	ft_player_move_len(t_game *game);
 void	ft_player_move_up(t_game *game);
 void	ft_player_move_down(t_game *game);
 void	ft_player_move_line(t_game *game);
+void	ft_next(t_game *game);
 
 /* ************************************************************************** */
 /*                              	OTHER                                     */

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:24:07 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/14 16:57:22 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:41:51 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,13 @@ int	ft_input(int key, t_game *game)
 		ft_player_move_down(game);
 	else if (key == 65307)
 		ft_exit_game(game);
+	return (0);
+}
+
+void	ft_next(t_game *game)
+{
 	mlx_clear_window(game->mlx.ptr, game->mlx.ptr_win);
 	game->moves += 1;
 	ft_printf("Total moves: %i\n", game->moves);
 	ft_print_window(game);
-	return (0);
 }

@@ -10,13 +10,13 @@ So_long:
 	✔ Sprite da saida @done (02/11/2021 18:58:44)
 	✔ Movimentar personagem @done (02/11/2021 18:58:45)
 	✔ Coletar itens @done (02/11/2021 18:58:45)
-	☐ Checar se o mapa atende as regras
+	✔ Checar se o mapa atende as regras @done (11/21/2021, 6:49:27 PM)
 	✔ Configurar a janela conforme subject (fechar, minimizar) @done (14/11/2021 13:01:37)
 	✔ Colocar a leitura do map em argv e argc @done (10/11/2021 00:18:57)
 	✔ Sair quando chegar na porta e depois de pegar as moedinhas @done (14/11/2021 13:01:40)
-	☐ Fazer o mapa dar erro se nao for retangular
+	✔ Fazer o mapa dar erro se nao for retangular @done (11/21/2021, 6:49:29 PM)
 	✔ Printar passos no terminal @done (14/11/2021 17:29:52)
-	☐ Corrigir leaks
+	✔ Corrigir leaks @done (11/21/2021, 6:49:30 PM)
 	✔ Refatorar as funçoes para melhor explicação @done (14/11/2021 14:34:24)
 	✔ Remover comentarios nos arquivos @done (14/11/2021 14:34:27)
 	☐ Remover others
