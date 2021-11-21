@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/21 04:39:08 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/21 16:35:08 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -174,7 +174,7 @@ v7: fclean all
 	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s ./so_long maps/map7.ber
 
 v8: fclean all
-	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s ./so_long maps/map8.ber
+	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s ./so_long maps/map9.ber
 
 # To use this command in terminal write:
 # make git m="your message"
