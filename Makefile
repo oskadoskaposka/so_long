@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/21 16:35:08 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/21 19:26:33 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,8 @@ C_SOURCE=src/so_long.c \
 		 src/3_moviments/find_key_input.c \
 		 src/3_moviments/horizontal_moves.c \
 		 src/3_moviments/vertical_moves.c \
-		 \
+## personal files
+##		 \
 		 others/checks/ft_check_values.c \
 		 others/checks/ft_check_window_values.c \
 		 others/checks/ft_check_rules.c
