@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/16 17:33:44 by apaduan-          #+#    #+#              #
-#    Updated: 2021/11/15 00:13:42 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/11/21 04:39:08 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -147,7 +147,7 @@ r7: fclean all
 	@./so_long maps/map7.ber
 
 r8: fclean all
-	@./so_long maps/map8.ber
+	@./so_long maps/map9.ber
 
 v1o:	fclean all
 	@valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind-out.txt ./so_long maps/map1.ber

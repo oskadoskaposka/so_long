@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:21:54 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/15 00:31:39 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/21 04:32:58 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 		ft_sucess(&game);
 	}
 	else
-		ft_printf("\nError \nMissing map file!\n\n");
+		ft_printf("\nError \nMYou must pass one map!\n\n");
 	return (0);
 }
 

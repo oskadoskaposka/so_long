@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 03:12:51 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/11/15 00:10:26 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/11/21 16:23:40 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,10 @@ void	ft_print_item(t_game *game, char c, int i, int j)
 void	ft_save_state(t_game *game)
 {
 	game->map.picks = game->map.picks_temp;
+}
+
+int		ft_expose(t_game *game)
+{
+	ft_print_window(game);
+	return (1);
 }
