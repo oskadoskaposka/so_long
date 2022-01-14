@@ -1,0 +1,25 @@
+So_long:
+	✔ Ler mapa e transformar em array @done (23/10/2021 23:39:11)
+	✔ criar função para configurar todo o mapa @done (24/10/2021 01:13:53)
+	✔ Criar a janela @done (24/10/2021 03:08:03)
+	✔ Printar imagens na tela de acordo com o mapa recebido @done (02/11/2021 18:58:41)
+	✔ Sprite do chao @done (24/10/2021 03:08:28)
+	✔ Sprite da parede @done (24/10/2021 03:08:28)
+	✔ Sprite do char @done (02/11/2021 18:58:43)
+	✔ Sprite do coletavel @done (02/11/2021 18:58:43)
+	✔ Sprite da saida @done (02/11/2021 18:58:44)
+	✔ Movimentar personagem @done (02/11/2021 18:58:45)
+	✔ Coletar itens @done (02/11/2021 18:58:45)
+	☐ Checar se o mapa atende as regras
+	✔ Configurar a janela conforme subject (fechar, minimizar) @done (14/11/2021 13:01:37)
+	✔ Colocar a leitura do map em argv e argc @done (10/11/2021 00:18:57)
+	✔ Sair quando chegar na porta e depois de pegar as moedinhas @done (14/11/2021 13:01:40)
+	☐ Fazer o mapa dar erro se nao for retangular
+	✔ Printar passos no terminal @done (14/11/2021 17:29:52)
+	☐ Corrigir leaks
+	✔ Refatorar as funçoes para melhor explicação @done (14/11/2021 14:34:24)
+	✔ Remover comentarios nos arquivos @done (14/11/2021 14:34:27)
+	☐ Remover others
+	☐ Remover funções de comentarios
+	☐ Enviar nova função da Libft para o github
+	☐ Remover Readme
